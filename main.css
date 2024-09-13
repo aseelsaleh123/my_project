@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    direction: rtl;
+}
+body{
+    background-color:rgb(245, 241, 244)
+    ;
+}
+.btn-outline-pink {
+    color: rgb(240, 233, 238); /* اللون الزهري للنص */
+    border-color: #030102; /* اللون الزهري للحدود */
+}
+.btn-outline-pink:hover {
+    background-color: rgb(228, 223, 227); /* اللون الزهري عند التمرير */
+    color: white; /* اللون الأبيض للنص عند التمرير */
+}
+.navbar {
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item-nowrap {
+    white-space: nowrap; /* منع التفاف النص */
+}
+.container-fluid{
+    justify-content:center;
+    align-items: center;
+
+}
+.collapse{
+
+    justify-content:center;
+    align-items: center;
+    flex-grow: 0;
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkgreen;
+}
+.img-logo{
+    height: 70px;
+    height: 50px;
+
+   justify-content: space-between;
+
+
+}
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 15px;
+}
+.sec{
+    height: 200px;
+}
+.navbar-nav .nav-link i {
+    margin-left: 5px;
+}
+.custom-icons {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+}
+.custom-icons .nav-item {
+    margin-left: 2px;
+
+
+}
+.nav-link{
+    height: 40px;
+    width: 50px;
+}
+.carousel-item{
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-item{
+width: 250px;
+}
+
+
+.carousel-caption {
+    left: 0;
+    right: auto;
+    text-align: center;
+
+    padding-left: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.carousel-caption h2 {
+    font-size: 1.5rem; /* حجم العنوان */
+    font-weight: bold;
+    margin-bottom: 20px; /* مسافة بين العنوان والنص */
+    color: black;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem; /* حجم النص */
+    margin-bottom: 20px; /* مسافة بين النص والزر */
+    color: black;
+}
+
+.carousel-caption button {
+    font-size: 1rem; /* حجم النص في الزر */
+    padding: 10px 20px; /* حجم الزر */
+    color:black;
+
+
+}
+
+
+
+
+.footer {
+
+    padding: 20px 0;
+    color: black
+    ;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-left-side .logo {
+    margin-bottom: 10px;
+}
+
+.footer-left-side .icon img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right-side {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+}
+h2{
+    color: black;
+}
+
+.footer-right-side .footwer-item {
+    margin-right: 40px;
+}
+
+.footer-right-side h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-right-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right-side ul li {
+    margin-bottom: 8px;
+}
+
+.footer-right-side ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-right-side ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/start course/
+.courses{
+  padding: 40px 0;
+  height: 10px;
+
+}
+.courses .row{
+  gap: 30px;
+  align-items: flex-start;
+}
+.course img{
+  width: 100%;
+}
+.course-items{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 30px) / 2 );
+  gap: 20px;
+  flex-grow: 1;
+
+
+}
+.course{
+
+  width: calc(( 100% - 20px ) / 2 );
+  box-shadow: 0px 7.44px 7.44px 0px #0000003c;
+  font-family: var(--mainFont);
+  border-radius: 10px ;
+  flex-grow: 1;
+
+}
+.course-card{
+  position: relative;
+}
+
+.course-details{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: wrap;
+
+}
+.course-details .row{
+  justify-content: space-around;
+  font-family: var(--mainFont);
+}
+.course-details .row h3{
+  font-weight: 700;
+}
+.course-details .row:first-of-type span{
+  color: var(--maincolor);
+}
+
+.course-details .row:last-of-type{
+  justify-content: flex-start;
+  color: #969696;
+}
+.course-card img{
+  filter: brightness(60%);
+}
+.course-info{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding:10px;
+  color: #fff;
+}
+.course-info span:first-of-type{
+  background-color:var(--maincolor);
+  padding:10px;
+}
+.course-info span:last-of-type{
+  color: #fff;
+  font-size: 20px;
+  align-self: flex-end;
+  font-family: var(--mainFont);
+font-weight: 700;
+
+}
+.course-description {
+  width: calc((100% - 30px) / 2);
+  padding: 20px;
+  text-align: center;
+  margin: auto; /* لجعلها في الوسط أفقياً */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+/end course/
+
+.category-item {
+    text-align: center;
+    margin: 15px;
+
+}
+
+.category-item:hover {
+
+}
+
+.category-item img {
+    width: 80%;
+    height: 200px;
+    border-radius: 100%;
+
+
+}
+
+.category-item h6 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight:bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+
+}
+.section-space {
+    margin-bottom: 90px; /* تحديد المسافة بين السكشنين */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%;
+}
+.containerr {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-center {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+body.dark {
+    background-color: #121212;
+
+}
+
+.changemode {
+
+    top: 20px;
+    right: 20px;
+    color: #f0f1f2;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+
+}
+
+body.dark .changemode {
+    color: #f1eeee;
+
+}
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+}
+.col{
+    padding-right: 150px;
+}
+.card-text{
+    color: #969696;
+}
+.card{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+.card img{
+    height: 300px;
+    width: 300px;
+}
+.card-body{
+    display: contents;
+}
